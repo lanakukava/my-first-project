@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>დაჯავშნა</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="book now.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>დაჯავშნე მოგზაურობა</h1>
+
+        <form class="booking-form">
+            
+            <label>სახელი</label>
+            <input type="text" placeholder="შეიყვანე სახელი" required>
+
+            <label>ელ.ფოსტა</label>
+            <input type="email" placeholder="შეიყვანე ელ.ფოსტა" required>
+
+            <label>ადგილის არჩევა</label>
+            <select required>
+                <option value="">აირჩიე ადგილი</option>
+                <option>ყაზბეგი</option>
+                <option>გუდაური</option>
+                <option>ბათუმი</option>
+                <option>სვანეთი</option>
+                <option>ზუგდიდი</option>
+                <option>თბილისი</option>
+                <option>ბაკურიანი</option>
+                <option>ახალციხე</option>
+                <option>მცხეთა</option>
+                <option>ქუთაისი</option>
+
+            </select>
+
+            <label>წასვლის თარიღი</label>
+            <input type="date" required>
+
+            <label>დამატებითი ინფორმაცია</label>
+            <textarea placeholder="დაწერე დამატებითი მოთხოვნა"></textarea>
+
+            <button type="submit">დაჯავშნა</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
