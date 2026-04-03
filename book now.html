@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>დაჯავშნა</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="book now.css">
 </head>
 <body>
+    <header>
+          <div class="logo">GeoVoyage</div>
+    <nav>
+          <a href="index.html">მთავარი</a>
+          <a href="home.html">ქალაქები</a>
+          <a href="about us.html">ჩვენს შესახებ</a>
+          <a href="login.html">რეგისტრაცია</a>
+        </nav>
+  </header>
+ 
 
     <div class="container">
         <h1>დაჯავშნე მოგზაურობა</h1>
@@ -14,10 +23,10 @@
         <form class="booking-form">
             
             <label>სახელი</label>
-            <input type="text" placeholder="შეიყვანე სახელი" required>
+            <input type="text" id="name" placeholder="შეიყვანე სახელი" required>
 
             <label>ელ.ფოსტა</label>
-            <input type="email" placeholder="შეიყვანე ელ.ფოსტა" required>
+            <input type="email"  id="email" placeholder="შეიყვანე ელ.ფოსტა" required>
 
             <label>ადგილის არჩევა</label>
             <select required>
@@ -32,19 +41,22 @@
                 <option>ახალციხე</option>
                 <option>მცხეთა</option>
                 <option>ქუთაისი</option>
-
             </select>
 
             <label>წასვლის თარიღი</label>
-            <input type="date" required>
+            <input type="date" id="date" required>
 
             <label>დამატებითი ინფორმაცია</label>
-            <textarea placeholder="დაწერე დამატებითი მოთხოვნა"></textarea>
+            <textarea id="info" placeholder="დაწერე დამატებითი მოთხოვნა"></textarea>
 
-            <button type="submit">დაჯავშნა</button>
+            <button type="submit" id="btn">დაჯავშნა</button>
 
         </form>
     </div>
-
+     <footer> 
+        © 2025 Travel Geo — ყველა უფლება დაცულია
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>
+
