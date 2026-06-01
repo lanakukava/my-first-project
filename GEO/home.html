@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ქალაქები</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">GeoVibe</div>
+
+    <nav>
+        <a href="index.html">მთავარი</a>
+        <a href="home.html">ქალაქები</a>
+        <a href="about us.html">ჩვენს შესახებ</a>
+        <a href="login.html">რეგისტრაცია</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>აღმოაჩინე საქართველოს ქალაქები</h1>
+    <p>აირჩიე სასურველი მიმართულება და ნახე ინფორმაცია, ფასები და ტურები.</p>
+</section>
+
+<div class="card-container">
+
+    <!-- თბილისი -->
+    <!-- თბილისი -->
+<div class="card">
+    <img src="./tbilisi.jpg" alt="თბილისი">
+
+    <div class="card-content">
+
+        <h3>თბილისი</h3>
+
+        <p>
+            საქართველოს დედაქალაქი,
+            ისტორიული ქალაქი და უნიკალური კულტურა.
+        </p>
+
+        <button onclick="openModal(
+        'თბილისი',
+        './tbilisi.jpg',
+        '299₾',
+        '3 დღე / 2 ღამე',
+        'ძველი თბილისი, მშვიდობის ხიდი, მთაწმინდა',
+        'მაისი - ოქტომბერი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- ბაკურიანი -->
+<div class="card">
+    <img src="./licensed-image.jpg" alt="ბაკურიანი">
+
+    <div class="card-content">
+
+        <h3>ბაკურიანი</h3>
+
+        <p>
+            ქვეყნის ყველაზე ძველი
+            სამთო-სათხილამურო კურორტი.
+        </p>
+
+        <button onclick="openModal(
+        'ბაკურიანი',
+        './licensed-image.jpg',
+        '380₾',
+        '4 დღე / 3 ღამე',
+        'კოხტა, დიდველი, სათხილამურო ტრასები',
+        'დეკემბერი - მარტი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- ბათუმი -->
+<div class="card">
+    <img src="./batumi.jpg" alt="ბათუმი">
+
+    <div class="card-content">
+
+        <h3>ბათუმი</h3>
+
+        <p>
+            შავი ზღვისპირა მდებარეობა,
+            პალმები და საღამოს ქალაქის შუქები.
+        </p>
+
+        <button onclick="openModal(
+        'ბათუმი',
+        './batumi.jpg',
+        '420₾',
+        '5 დღე / 4 ღამე',
+        'ბულვარი, ანბანის კოშკი, ბოტანიკური ბაღი',
+        'ივნისი - სექტემბერი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- ყაზბეგი -->
+<div class="card">
+    <img src="./kazbegi.jpg" alt="ყაზბეგი">
+
+    <div class="card-content">
+
+        <h3>ყაზბეგი</h3>
+
+        <p>
+            ცნობილია თავისი ულამაზესი ბუნებით
+            და ისტორიული ძეგლებით.
+        </p>
+
+        <button onclick="openModal(
+        'ყაზბეგი',
+        './kazbegi.jpg',
+        '350₾',
+        '2 დღე / 1 ღამე',
+        'გერგეტის სამება, მთის ტურები',
+        'მთელი წელი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- სვანეთი -->
+<div class="card">
+    <img src="./svaneti.jpg" alt="სვანეთი">
+
+    <div class="card-content">
+
+        <h3>სვანეთი</h3>
+
+        <p>
+            გამორჩეული კოშკები,
+            ბუნება და ადგილობრივი კულტურა.
+        </p>
+
+        <button onclick="openModal(
+        'სვანეთი',
+        './svaneti.jpg',
+        '590₾',
+        '6 დღე / 5 ღამე',
+        'მესტია, უშგული, ჰაწვალი',
+        'ივნისი - ოქტომბერი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- ზუგდიდი -->
+<div class="card">
+    <img src="./zugdidi.jpg" alt="ზუგდიდი">
+
+    <div class="card-content">
+
+        <h3>ზუგდიდი</h3>
+
+        <p>
+            უძველესი კულტურის მქონე რაიონი
+            და ღირსშესანიშნაობები.
+        </p>
+
+        <button onclick="openModal(
+        'ზუგდიდი',
+        './zugdidi.jpg',
+        '260₾',
+        '2 დღე / 1 ღამე',
+        'დადიანების სასახლე, ბოტანიკური ბაღი',
+        'აპრილი - ოქტომბერი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- გუდაური -->
+<div class="card">
+    <img src="./gudauri.jpg" alt="გუდაური">
+
+    <div class="card-content">
+
+        <h3>გუდაური</h3>
+
+        <p>
+            ცნობილი სამთო-სათხილამურო
+            კურორტი საქართველოში.
+        </p>
+
+        <button onclick="openModal(
+        'გუდაური',
+        './gudauri.jpg',
+        '450₾',
+        '4 დღე / 3 ღამე',
+        'სათხილამურო ტრასები, პარაგლაიდინგი',
+        'დეკემბერი - მარტი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- ახალციხე -->
+<div class="card">
+    <img src="./akhaltshike-1.webp" alt="ახალციხე">
+
+    <div class="card-content">
+
+        <h3>ახალციხე</h3>
+
+        <p>
+            ისტორიული ქალაქი,
+            ცნობილია რაბათის ციხით.
+        </p>
+
+        <button onclick="openModal(
+        'ახალციხე',
+        './akhaltshike-1.webp',
+        '310₾',
+        '3 დღე / 2 ღამე',
+        'რაბათის ციხე, საფარა, მუზეუმები',
+        'მაისი - ოქტომბერი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- ქუთაისი -->
+<div class="card">
+    <img src="./Kutaisi-1.jpg" alt="ქუთაისი">
+
+    <div class="card-content">
+
+        <h3>ქუთაისი</h3>
+
+        <p>
+            ცნობილია ბაგრატის ტაძრით
+            და სათაფლიის მღვიმეებით.
+        </p>
+
+        <button onclick="openModal(
+        'ქუთაისი',
+        './Kutaisi-1.jpg',
+        '330₾',
+        '3 დღე / 2 ღამე',
+        'ბაგრატი, გელათი, პრომეთეს მღვიმე',
+        'მთელი წელი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- მცხეთა -->
+<div class="card">
+    <img src="./mcxeta.jpg" alt="მცხეთა">
+
+    <div class="card-content">
+
+        <h3>მცხეთა</h3>
+
+        <p>
+            უძველესი ისტორიული ქალაქი,
+            სვეტიცხოვლის ტაძრით ცნობილი.
+        </p>
+
+        <button onclick="openModal(
+        'მცხეთა',
+        './mcxeta.jpg',
+        '220₾',
+        '1 დღე',
+        'სვეტიცხოველი, ჯვრის მონასტერი',
+        'მთელი წელი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+<!-- სიღნაღი -->
+<div class="card">
+    <img src="./signagi.jfif" alt="სიღნაღი">
+
+    <div class="card-content">
+        <h3>სიღნაღი</h3>
+
+        <p>
+            სიყვარულის ქალაქი,
+            ულამაზესი ხედებითა და ღვინის კულტურით.
+        </p>
+
+        <button onclick="openModal(
+        'სიღნაღი',
+        './signagi.jpg',
+        '340₾',
+        '2 დღე / 1 ღამე',
+        'სიღნაღის კედელი, ბოდბე, ღვინის ტური',
+        'აპრილი - ოქტომბერი'
+        )">მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- თელავი -->
+<div class="card">
+    <img src="./telavi.jpg" alt="თელავი">
+
+    <div class="card-content">
+        <h3>თელავი</h3>
+
+        <p>
+            კახეთის მთავარი ქალაქი,
+            ღვინისა და ისტორიის ცენტრი.
+        </p>
+
+        <button onclick="openModal(
+        'თელავი',
+        './telavi.jpg',
+        '370₾',
+        '3 დღე / 2 ღამე',
+        'ბატონის ციხე, წინანდალი, ღვინის მარნები',
+        'მაისი - ოქტომბერი'
+        )">მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- ბორჯომი -->
+<div class="card">
+    <img src="./borjomi.jfif" alt="ბორჯომი">
+
+    <div class="card-content">
+        <h3>ბორჯომი</h3>
+
+        <p>
+            ცნობილი მინერალური წყლებით
+            და ულამაზესი პარკებით.
+        </p>
+
+        <button onclick="openModal(
+        'ბორჯომი',
+        './borjomi.jpg',
+        '290₾',
+        '2 დღე / 1 ღამე',
+        'ბორჯომის პარკი, მწვანე მონასტერი',
+        'მთელი წელი'
+        )">მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- ანანური -->
+<div class="card">
+    <img src="./ananuri.jpg" alt="ანანური">
+
+    <div class="card-content">
+        <h3>ანანური</h3>
+
+        <p>
+            ისტორიული ციხე-კომპლექსი
+            ჟინვალის წყალსაცავთან.
+        </p>
+
+        <button onclick="openModal(
+        'ანანური',
+        './ananuri.jpg',
+        '180₾',
+        '1 დღე',
+        'ანანურის ციხე, ჟინვალი',
+        'მთელი წელი'
+        )">მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- მარტვილი -->
+<div class="card">
+    <img src="./martvili.webp" alt="მარტვილი">
+
+    <div class="card-content">
+        <h3>მარტვილი</h3>
+
+        <p>
+            ულამაზესი კანიონები
+            და ნავით გასეირნება ბუნებაში.
+        </p>
+
+        <button onclick="openModal(
+        'მარტვილი',
+        './martvili.jpg',
+        '260₾',
+        '2 დღე / 1 ღამე',
+        'მარტვილის კანიონი, ჩანჩქერები',
+        'მაისი - სექტემბერი'
+        )"> მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- ურეკი -->
+<div class="card">
+    <img src="./ureki.jfif" alt="ურეკი">
+
+    <div class="card-content">
+        <h3>ურეკი</h3>
+
+        <p>
+            მაგნიტური ქვიშებით
+            ცნობილი ზღვის კურორტი.
+        </p>
+
+        <button onclick="openModal(
+        'ურეკი',
+        './ureki.jpg',
+        '320₾',
+        '4 დღე / 3 ღამე',
+        'სანაპირო, ფიჭვნარი',
+        'ივნისი - სექტემბერი'
+        )">მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- ომალო -->
+<div class="card">
+    <img src="./omalo.jfif" alt="ომალო">
+
+    <div class="card-content">
+        <h3>ომალო</h3>
+
+        <p>
+            თუშეთის ულამაზესი სოფელი,
+            საოცარი ხედებით.
+        </p>
+
+        <button onclick="openModal(
+        'ომალო',
+        './omalo.jpg',
+        '690₾',
+        '5 დღე / 4 ღამე',
+        'თუშეთი, კესელოს კოშკები',
+        'ივნისი - სექტემბერი'
+        )">მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- ლაგოდეხი -->
+<div class="card">
+    <img src="./lagodekhi.jpg" alt="ლაგოდეხი">
+
+    <div class="card-content">
+        <h3>ლაგოდეხი</h3>
+
+        <p>
+            დაცული ტერიტორიები,
+            ტყეები და ჩანჩქერები.
+        </p>
+
+        <button onclick="openModal(
+        'ლაგოდეხი',
+        './lagodekhi.jpg',
+        '250₾',
+        '2 დღე / 1 ღამე',
+        'ნაკრძალი, ჩანჩქერები',
+        'აპრილი - ოქტომბერი'
+        )">მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- მესტია -->
+<div class="card">
+    <img src="./mestia.jfif" alt="მესტია">
+
+    <div class="card-content">
+        <h3>მესტია</h3>
+
+        <p>
+            სვანეთის ცენტრი,
+            კოშკები და მთის ხედები.
+        </p>
+
+        <button onclick="openModal(
+        'მესტია',
+        './mestia.jpg',
+        '560₾',
+        '5 დღე / 4 ღამე',
+        'ჰაწვალი, მუზეუმი, უშგული',
+        'ივნისი - ოქტომბერი'
+        )">მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- აბასთუმანი -->
+<div class="card">
+    <img src="./abastumani.jfif" alt="აბასთუმანი">
+
+    <div class="card-content">
+        <h3>აბასთუმანი</h3>
+
+        <p>
+            სამკურნალო ჰავა
+            და ასტროფიზიკური ობსერვატორია.
+        </p>
+
+        <button onclick="openModal(
+        'აბასთუმანი',
+        './abastumani.jpg',
+        '280₾',
+        '2 დღე / 1 ღამე',
+        'ობსერვატორია, ტყეები',
+        'მაისი - ოქტომბერი'
+        )">მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- რაჭა -->
+<div class="card">
+    <img src="./racha.jpg" alt="რაჭა">
+
+    <div class="card-content">
+        <h3>რაჭა</h3>
+
+        <p>
+            ულამაზესი ბუნება,
+            მთები და შაორის ტბა.
+        </p>
+
+        <button onclick="openModal(
+        'რაჭა',
+        './racha.jpg',
+        '480₾',
+        '4 დღე / 3 ღამე',
+        'შაორი, ნიკორწმინდა',
+        'ივნისი - სექტემბერი'
+        )">მეტი ინფორმაცია</button>
+    </div>
+</div>
+
+<!-- დმანისი -->
+<div class="card">
+    <img src="./dmanisi.jfif" alt="დმანისი">
+
+    <div class="card-content">
+
+        <h3>დმანისი</h3>
+
+        <p>
+            ისტორიული ქალაქი,
+            ცნობილი უძველესი არქეოლოგიური აღმოჩენებით.
+        </p>
+
+        <button onclick="openModal(
+        'დმანისი',
+        './dmanisi.jpg',
+        '230₾',
+        '2 დღე / 1 ღამე',
+        'დმანისის ნაქალაქარი, მუზეუმი',
+        'აპრილი - ოქტომბერი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- გორი -->
+<div class="card">
+    <img src="./gori.jfif" alt="გორი">
+
+    <div class="card-content">
+
+        <h3>გორი</h3>
+
+        <p>
+            ისტორიული ქალაქი,
+            ცნობილია უფლისციხით და მუზეუმებით.
+        </p>
+
+        <button onclick="openModal(
+        'გორი',
+        './gori.jpg',
+        '240₾',
+        '2 დღე / 1 ღამე',
+        'უფლისციხე, სტალინის მუზეუმი',
+        'მთელი წელი'
+        )">მეტი ინფორმაცია</button>
+
+    </div>
+</div>
+
+<!-- ფშავი -->
+<div class="card">
+    <img src="./pshavi.jfif" alt="ფშავი">
+
+    <div class="card-content">
+
+        <h3>ფშავი</h3>
+
+        <p>
+            მთიანი რეგიონი,
+            ულამაზესი ბუნებითა და ტრადიციებით.
+        </p>
+
+        <button onclick="openModal(
+        'ფშავი',
+        './pshavi.jpg',
+        '410₾',
+        '3 დღე / 2 ღამე',
+        'მთის ტურები, ტბები, ჩანჩქერები',
+        'მაისი - სექტემბერი'
+        )"> More</button>
+
+    </div>
+</div>
+</div>
+</div>
+
+<!-- MODAL -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <img id="modalImg" src="" alt="">
+
+        <h2 id="modalTitle"></h2>
+
+        <div class="info-box">
+            <p><strong>ფასი:</strong> <span id="modalPrice"></span></p>
+
+            <p><strong>ხანგრძლივობა:</strong> <span id="modalTime"></span></p>
+
+            <p><strong>ადგილები:</strong> <span id="modalPlaces"></span></p>
+
+            <p><strong>საუკეთესო სეზონი:</strong> <span id="modalSeason"></span></p>
+        </div>
+
+        <button class="book-btn" onclick="window.location.href='book now.html'">
+    დაჯავშნა
+</button>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 GeoVibe | ყველა უფლება დაცულია
+</footer>
+
+<script src="home.js"></script>
+
+</body>
+</html>

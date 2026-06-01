@@ -1,0 +1,149 @@
+*{
+    font-family: "Arial", sans-serif;
+    color: #333;
+    background-size: cover;
+    margin: 0 ;
+    padding: 0 ;
+    }
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0px;
+    background-color: rgb(238, 233, 233);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3b29a0;
+}
+
+nav{
+    margin-left: 20px;
+    margin-right: 10px;
+    color: #333;
+    font-weight: 100px;
+    display: flex;
+    list-style: none;
+}
+
+nav a{
+    color:#222;
+    font-size:20px;
+}
+
+.hero{
+    width:100%;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1974&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+
+.form-box{
+    width:500px;
+    background:#dce6f0;
+    padding:40px;
+    border-radius:25px;
+}
+
+.form-box h1{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:35px;
+    color:#1d2b38;
+}
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;  
+    margin-bottom:8px;
+    font-size:15px;
+    color:#23303c;
+ }
+
+.input-group input{
+    width:100%;
+    padding:16px;
+    border-radius:12px;
+    border:1px solid #c8c8c8;
+      font-size:18px;
+      outline:none;
+    }
+
+    button{
+      width:100%;
+      padding:18px;
+      border:none;
+      border-radius:14px;
+      background:#9eb0c6;
+      color:white;
+      font-size:26px;
+      cursor:pointer;
+      transition:0.3s;
+      margin-top:10px;
+    }
+
+    button:hover{
+      background:#869ab3;
+    }
+
+    .login-text{
+      text-align:center;
+      margin-top:20px;
+      font-size:18px;
+    }
+
+    .login-text a{
+      text-decoration:none;
+      color:#3b33b6;
+      font-weight:bold;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:700px){
+
+      header{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:20px;
+      }
+
+      nav ul{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .logo{
+        font-size:32px;
+      }
+
+      .form-box{
+        width:100%;
+      }
+
+      .form-box h1{
+        font-size:34px;
+      }
+    }

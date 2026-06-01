@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>დაჯავშნა | GeoVibe</title>
+
+<link rel="stylesheet" href="book now.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">GeoVibe</div>
+
+    <nav>
+        <a href="index.html">მთავარი</a>
+        <a href="home.html">ქალაქები</a>
+        <a href="about us.html">ჩვენს შესახებ</a>
+        <a href="login.html">რეგისტრაცია</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>დაგეგმე შენი მოგზაურობა</h1>
+
+        <p>
+            მიიღე საუკეთესო შეთავაზებები,
+            ფასდაკლებები და პრემიუმ ტურები.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- BOOKING -->
+
+<section class="booking-section">
+
+    <div class="booking-card">
+
+        <h2>ტურის დაჯავშნა</h2>
+
+        <form id="bookingForm">
+
+            <input 
+            type="text"
+            id="nameInput"
+            placeholder="სახელი"
+            required>
+
+            <input 
+            type="text"
+            id="personalInput"
+            placeholder="პირადი ნომერი"
+            required>
+
+            <input 
+            type="text"
+            id="phoneInput"
+            placeholder="ტელეფონის ნომერი"
+            required>
+            <select id="citySelect">
+                <option value="299">თბილისი — 299₾</option>
+                <option value="420">ბათუმი — 420₾</option>
+                <option value="350">ყაზბეგი — 350₾</option>
+                <option value="590">სვანეთი — 590₾</option>
+                <option value="450">გუდაური — 450₾</option>
+                <option value="380">ბაკურიანი — 380₾</option>
+                <option value="260">ზუგდიდი — 260₾</option>
+                <option value="330">ქუთაისი — 330₾</option>
+                <option value="220">მცხეთა — 220₾</option>
+                <option value="310">ახალციხე — 310₾</option>
+                <option value="340">სიღნაღი — 340₾</option>
+                <option value="370">თელავი — 370₾</option>
+                <option value="290">ბორჯომი — 290₾</option>
+                <option value="180">ანანური — 180₾</option>
+                <option value="260">მარტვილი — 260₾</option>
+                <option value="320">ურეკი — 320₾</option>
+                <option value="690">ომალო — 690₾</option>
+                <option value="250">ლაგოდეხი — 250₾</option>
+                <option value="560">მესტია — 560₾</option>
+                <option value="280">აბასთუმანი — 280₾</option>
+                <option value="480">რაჭა — 480₾</option>
+                <option value="240">წყალტუბო — 240₾</option>
+                <option value="230">დმანისი — 230₾</option>
+                <option value="240">გორი — 240₾</option>
+                <option value="410">ფშავი — 410₾</option>
+            </select>
+
+            <select id="peopleCount">
+                <option value="1">1 ადამიანი</option>
+                <option value="2">2 ადამიანი -10%</option>
+                <option value="3">3 ადამიანი -20%</option>
+                <option value="4">4+ ადამიანი -30%</option>
+            </select>
+
+            <input type="date" id="dateInput" required>
+
+            <div class="price-box">
+                საბოლოო ფასი:
+                <span id="finalPrice">299₾</span>
+            </div>
+
+            <button type="submit">დაჯავშნა</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- OFFERS -->
+
+<section class="offers">
+
+    <h2>სპეციალური შეთავაზებები</h2>
+
+    <div class="offer-container">
+
+        <div class="offer-card">
+            <h3>2 ადამიანი</h3>
+            <p>მიიღე 10% ფასდაკლება</p>
+        </div>
+
+        <div class="offer-card">
+            <h3>3 ადამიანი</h3>
+            <p>მიიღე 20% ფასდაკლება</p>
+        </div>
+
+        <div class="offer-card">
+            <h3>4+ ადამიანი</h3>
+            <p>მიიღე 30% ფასდაკლება</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CHART -->
+
+<section class="chart-section">
+
+    <h2>ყველაზე პოპულარული მიმართულებები</h2>
+
+    <div class="chart-card">
+        <canvas id="travelChart"></canvas>
+    </div>
+
+</section>
+
+<!-- TICKET POPUP -->
+
+<div class="ticket-popup" id="ticketPopup">
+
+    <div class="ticket-card" id="ticketCard">
+
+        <h2>🎫 თქვენი ბილეთი</h2>
+
+        <div class="ticket-info">
+
+            <p>
+                <strong>სახელი:</strong>
+                <span id="ticketName"></span>
+            </p>
+
+            <p>
+                <strong>პირადი ნომერი:</strong>
+                <span id="ticketPersonal"></span>
+            </p>
+
+            <p>
+                <strong>ტელეფონი:</strong>
+                <span id="ticketPhone"></span>
+            </p>
+
+            <p>
+                <strong>ქალაქი:</strong>
+                <span id="ticketCity"></span>
+            </p>
+
+            <p>
+                <strong>ადამიანები:</strong>
+                <span id="ticketPeople"></span>
+            </p>
+
+            <p>
+                <strong>თარიღი:</strong>
+                <span id="ticketDate"></span>
+            </p>
+
+            <p>
+                <strong>ფასი:</strong>
+                <span id="ticketPrice"></span>
+            </p>
+
+        </div>
+
+        <div class="ticket-message">
+
+            📸 გადაიღეთ სქრინი ან ჩამოტვირთეთ ბილეთი
+
+        </div>
+
+        <button onclick="downloadTicket()">
+            ჩამოტვირთვა
+        </button>
+
+        <button 
+        class="close-ticket"
+        onclick="closeTicket()">
+
+            დახურვა
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026 GeoVibe | ყველა უფლება დაცულია
+
+</footer>
+
+<script src="book.js"></script>
+
+</body>
+</html>
