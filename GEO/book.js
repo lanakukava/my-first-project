@@ -6,8 +6,6 @@ const finalPrice = document.getElementById('finalPrice');
 
 const bookingForm = document.getElementById('bookingForm');
 
-/* PRICE UPDATE */
-
 function updatePrice(){
 
     let basePrice = Number(citySelect.value);
@@ -40,60 +38,41 @@ peopleCount.addEventListener('change', updatePrice);
 
 updatePrice();
 
-/* BOOKING */
-
 bookingForm.addEventListener('submit', function(e){
 
     e.preventDefault();
 
-    /* NAME */
-
     document.getElementById('ticketName').innerHTML =
     document.getElementById('nameInput').value;
-
-    /* PERSONAL ID */
 
     document.getElementById('ticketPersonal').innerHTML =
     document.getElementById('personalInput').value;
 
-    /* PHONE */
-
     document.getElementById('ticketPhone').innerHTML =
     document.getElementById('phoneInput').value;
-
-    /* CITY */
 
     document.getElementById('ticketCity').innerHTML =
     citySelect.options[citySelect.selectedIndex].text;
 
-    /* PEOPLE */
-
     document.getElementById('ticketPeople').innerHTML =
     peopleCount.options[peopleCount.selectedIndex].text;
-
-    /* DATE */
 
     document.getElementById('ticketDate').innerHTML =
     document.getElementById('dateInput').value;
 
-    /* PRICE */
-
     document.getElementById('ticketPrice').innerHTML =
     finalPrice.innerHTML;
 
-    /* SHOW TICKET */
 
     document.getElementById('ticketPopup').style.display = 'flex';
 });
 
-/* CLOSE TICKET */
 
 function closeTicket(){
 
     document.getElementById('ticketPopup').style.display = 'none';
 }
 
-/* DOWNLOAD TICKET */
 
 function downloadTicket(){
 

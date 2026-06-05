@@ -10,7 +10,6 @@ body{
     color: #222;
 }
 
-/* HEADER */
 
 header{
     width: 100%;
@@ -50,7 +49,6 @@ nav a:hover{
     color: #4834d4;
 }
 
-/* HERO */
 
 .hero{
     height: 60vh;
@@ -81,8 +79,6 @@ nav a:hover{
 .hero-content p{
     font-size: 22px;
 }
-
-/* REGISTER */
 
 .register-section{
     width: 100%;
@@ -162,8 +158,6 @@ select:focus{
     transform: translateY(-5px);
 }
 
-/* OFFERS */
-
 .offers{
     padding: 50px 40px 100px;
 }
@@ -213,8 +207,6 @@ select:focus{
     font-size: 18px;
 }
 
-/* FOOTER */
-
 footer{
     background: #111;
     color: white;
@@ -224,7 +216,6 @@ footer{
     padding: 25px;
 }
 
-/* RESPONSIVE */
 
 @media(max-width:700px){
 
